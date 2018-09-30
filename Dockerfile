@@ -9,6 +9,7 @@ RUN apk add --no-cache git && \
 
 VOLUME /assistant-relay/server/configurations/secrets
 VOLUME /assistant-relay/server/configurations/tokens
+EXPOSE 3000
 
 WORKDIR /assistant-relay
 CMD npm run start
