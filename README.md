@@ -9,7 +9,7 @@ docker run --rm -it \
     -v /path/to/host/folder/tokens:/assistant-relay/server/configurations/tokens \
     kmlucy/docker-assistant-relay
 ```
-Copy the url and paste it into a browser. Follow the step online until it presents you with a code. Paste that code into the terminal and press enter. You should get a message that Assistant Relay is running. You can now close the container.
+Copy the url and paste it into a browser. Follow the steps online until it presents you with a code. Paste that code into the terminal and press enter. You should get a message that Assistant Relay is running. You can now close the container.
 
 After setup, you can run it with:
 ```
