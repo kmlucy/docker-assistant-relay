@@ -20,4 +20,25 @@ docker run --rm -d \
     kmlucy/docker-assistant-relay```
 ```
 
+If you are using it in Home Assistant, you can set up noficiation agents as follows:
+```
+# Notifications
+notify:
+  - name: Google Home
+    platform: rest
+    resource: !secret relay_url
+    method: POST_JSON
+    message_param_name: command
+    data:
+      user: !secret relay_user
+      broadcast: true
+  - name: Google Home Command
+    platform: rest
+    resource: !secret relay_url
+    method: POST_JSON
+    message_param_name: command
+    data:
+      user: !secret relay_user
+```
+
 Based on [greghesp/assistant-relay](https://github.com/greghesp/assistant-relay)
