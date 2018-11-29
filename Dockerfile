@@ -9,6 +9,7 @@ RUN apk add --no-cache git && \
 
 VOLUME /assistant-relay/server/configurations/secrets
 VOLUME /assistant-relay/server/configurations/tokens
+VOLUME /assistant-relay/server/configurations/config.json
 EXPOSE 3000
 
 WORKDIR /assistant-relay
