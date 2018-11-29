@@ -17,7 +17,7 @@ docker run --rm -d \
     --name assistant-relay -p 3000:3000
     -v /path/to/host/folder/secrets:/assistant-relay/server/configurations/secrets:ro \
     -v /path/to/host/folder/tokens:/assistant-relay/server/configurations/tokens:ro \
-    kmlucy/docker-assistant-relay```
+    kmlucy/docker-assistant-relay
 ```
 
 If you are using it in Home Assistant, you can set up noficiation agents as follows:
