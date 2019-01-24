@@ -1,7 +1,7 @@
 FROM node:8-alpine
 LABEL maintainer "Kyle Lucy <kmlucy@gmail.com>"
 
-RUN apk add --no-cache git && \
+RUN apk add --no-cache git tzdata && \
 	git clone https://github.com/greghesp/assistant-relay.git && \
 	cd assistant-relay && \
 	npm install && \

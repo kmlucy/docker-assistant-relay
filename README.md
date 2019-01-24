@@ -24,6 +24,7 @@ docker run --rm -d \
     -v /path/to/host/folder/secrets:/assistant-relay/server/configurations/secrets:ro \
     -v /path/to/host/folder/tokens:/assistant-relay/server/configurations/tokens:ro \
     -v /path/to/host/folder/config.json:/assistant-relay/server/configurations/config.json \
+    -e TZ=America/New_York \
     kmlucy/docker-assistant-relay
 ```
 
