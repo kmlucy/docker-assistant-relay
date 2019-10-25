@@ -4,6 +4,7 @@ LABEL maintainer "Kyle Lucy <kmlucy@gmail.com>"
 RUN apk add --no-cache git tzdata && \
 	git clone https://github.com/greghesp/assistant-relay.git && \
 	cd assistant-relay && \
+	git checkout master && \
 	npm install && \
 	apk del git
 
