@@ -1,8 +1,10 @@
 # docker-assistant-relay
 
+### Note: This is based on Assistant Relay V2, not the newer V3. I have no intentions of supporting V3 at this time, but you are welcome to fork this repository if you would like.
+
 First time setup:
 
-Follow the instructions to setup Assistant Relay [here](https://github.com/greghesp/assistant-relay) until you get to the section for running the relay. Then run:
+Follow the instructions to setup Assistant Relay [here](https://github.com/greghesp/assistant-relay/blob/master/readMe.md) until you get to the section for running the relay. Then run:
 ```
 docker run --rm -it \
     -v /path/to/host/folder/secrets:/assistant-relay/server/configurations/secrets \
@@ -49,4 +51,4 @@ notify:
       user: !secret relay_user
 ```
 
-Based on [greghesp/assistant-relay](https://github.com/greghesp/assistant-relay)
+Based on [greghesp/assistant-relay V2](https://github.com/greghesp/assistant-relay/tree/master)
