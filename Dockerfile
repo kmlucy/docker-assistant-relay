@@ -10,4 +10,4 @@ VOLUME /assistant-relay/server/configurations/secrets
 VOLUME /assistant-relay/server/configurations/tokens
 EXPOSE 3000
 
-CMD npm run start
+CMD ["npm","run","start"]
