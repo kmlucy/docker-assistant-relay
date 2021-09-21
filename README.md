@@ -9,7 +9,7 @@ Follow the instructions to setup Assistant Relay [here](https://github.com/gregh
 docker run --rm -it \
     -v /path/to/host/folder/secrets:/assistant-relay/server/configurations/secrets \
     -v /path/to/host/folder/tokens:/assistant-relay/server/configurations/tokens \
-    kmlucy/docker-assistant-relay
+    ghcr.io/kmlucy/docker-assistant-relay
 ```
 Copy the url and paste it into a browser. Follow the steps online until it presents you with a code. Paste that code into the terminal and press enter. You should get a message that Assistant Relay is running.
 
@@ -27,7 +27,7 @@ docker run --rm -d \
     -v /path/to/host/folder/tokens:/assistant-relay/server/configurations/tokens:ro \
     -v /path/to/host/folder/config.json:/assistant-relay/server/configurations/config.json \
     -e TZ=America/New_York \
-    kmlucy/docker-assistant-relay
+    ghcr.io/kmlucy/docker-assistant-relay
 ```
 
 If you are using it in Home Assistant, you can set up noficiation agents as follows:
