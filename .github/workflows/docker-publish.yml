@@ -63,3 +63,10 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      # Keep repository alive
+      - name: Keep repository alive
+        uses: gautamkrishnar/keepalive-workflow@master
+        with:
+          time_elapsed: 20
+
