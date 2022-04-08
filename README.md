@@ -1,23 +1,6 @@
 # docker-assistant-relay
 
-### Note: This is based on Assistant Relay V2, not the newer V3. I have no intentions of supporting V3 at this time, but you are welcome to fork this repository if you would like.
-
-First time setup:
-
-Follow the instructions to setup Assistant Relay [here](https://github.com/greghesp/assistant-relay/blob/master/readMe.md) until you get to the section for running the relay. Then run:
-```
-docker run --rm -it \
-    -v /path/to/host/folder/secrets:/assistant-relay/server/configurations/secrets \
-    -v /path/to/host/folder/tokens:/assistant-relay/server/configurations/tokens \
-    ghcr.io/kmlucy/docker-assistant-relay
-```
-Copy the url and paste it into a browser. Follow the steps online until it presents you with a code. Paste that code into the terminal and press enter. You should get a message that Assistant Relay is running.
-
-If you want to modify the configuration, copy out the config file:
-```
-docker cp assistant-relay:/assistant-relay/server/configurations/config.json /path/to/host/folder/config.json
-```
-You can now close the container.
+### Note: This is based on Assistant Relay V2, not the newer versions. I have no intentions of supporting V3 or V4 at this time, but you are welcome to fork this repository if you would like. New users should use the current version, I'm leaving this up for current users of V2.
 
 After setup, you can run it with:
 ```
