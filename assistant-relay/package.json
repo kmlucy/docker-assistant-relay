@@ -22,7 +22,7 @@
   "author": "Greg Hesp <greg.hesp@gmail.com> (http://www.greghesp.com)",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^2.6.4",
     "body-parser": "^1.18.3",
     "buffer-to-uint8array": "^1.1.0",
     "cli-color": "^1.2.0",
