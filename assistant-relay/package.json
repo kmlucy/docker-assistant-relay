@@ -31,7 +31,7 @@
     "ip": "^1.1.5",
     "lowdb": "^1.0.0",
     "prompt": "^1.0.0",
-    "terminal-image": "^0.1.1",
+    "terminal-image": "^0.1.2",
     "wav": "^1.0.2",
     "wav-file-info": "0.0.8"
   }
